@@ -1,0 +1,23 @@
+{
+  "name": "lara",
+  "version": "0.0.1",
+  "description": "Twitch Bot",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w2rs/lara.git"
+  },
+  "keywords": [
+    "bot",
+    "twitch"
+  ],
+  "author": "Ramon Rodrigues <rodrigues98p@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/w2rs/lara/issues"
+  },
+  "homepage": "https://github.com/w2rs/lara#readme"
+}
