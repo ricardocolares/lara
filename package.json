@@ -4,7 +4,7 @@
   "description": "Twitch Bot",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --fix src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/w2rs/lara/issues"
   },
-  "homepage": "https://github.com/w2rs/lara#readme"
+  "homepage": "https://github.com/w2rs/lara#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1"
+  }
 }
