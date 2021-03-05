@@ -4,7 +4,8 @@
   "description": "Twitch Bot",
   "main": "src/index.js",
   "scripts": {
-    "lint": "eslint --fix src/**/*.js"
+    "lint": "eslint --fix src/**/*.js",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
