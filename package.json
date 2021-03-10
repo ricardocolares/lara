@@ -24,7 +24,10 @@
     "url": "https://github.com/w2rs/lara/issues"
   },
   "homepage": "https://github.com/w2rs/lara#readme",
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "tmi.js": "^1.7.5"
+  },
   "devDependencies": {
     "eslint": "^7.21.0",
     "eslint-config-standard": "^16.0.2",
