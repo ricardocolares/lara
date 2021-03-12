@@ -1,5 +1,9 @@
 import 'dotenv/config'
 import { Client } from 'tmi.js'
+import {
+  subscriptionHandler, resubHandler,
+  cheerHandler, raidHandler
+} from './events'
 
 const { BOT_NAME, BOT_OAUTH, CHANNEL_LIST } = process.env
 
@@ -15,3 +19,11 @@ const client = new Client({
 
 // connect bot to twitch
 client.connect()
+
+// events
+client.on('subscription', subscriptionHandler)
+client.on('resub', resubHandler)
+client.on('cheer', cheerHandler)
+client.on('raided', raidHandler)
+
+export default client
