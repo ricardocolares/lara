@@ -1,5 +1,6 @@
 import 'dotenv/config'
 import { Client } from 'tmi.js'
+import commandHandler from './commandHandler'
 import {
   subscriptionHandler, resubHandler,
   cheerHandler, raidHandler
@@ -19,6 +20,9 @@ const client = new Client({
 
 // connect bot to twitch
 client.connect()
+
+// command handler
+client.on('message', commandHandler)
 
 // events
 client.on('subscription', subscriptionHandler)
