@@ -1,4 +1,5 @@
-const execute = () => 'Hello World'
+const execute = ({ userstate, sendMessage }) =>
+  sendMessage(`Hello ${userstate.username} BegWan`)
 
 module.exports = {
   name: 'hello',
